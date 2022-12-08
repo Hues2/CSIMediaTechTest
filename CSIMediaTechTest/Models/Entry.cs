@@ -1,9 +1,16 @@
-﻿namespace CSIMediaTechTest.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CSIMediaTechTest.Models
 {
     public class Entry
     {
-        public List<int> numbers { get; set; }
-        public bool isAscending { get; set; }
-        public decimal time { get; set; }
+        [Key]
+        public int Id { get; set; }
+        [Required]
+        public List<int> Numbers { get; set; }
+        [Required]
+        public bool IsAscending { get; set; }
+        [Required]
+        public decimal Time { get; set; }
     }
 }

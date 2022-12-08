@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "c2pken4OwjDB8lePMSKMJK29SnbFV3zB0MHZ9o4jskw=",
+  "Hash": "z+zhdKvbs4EgCYzvq5hQLi62gsefpPgEoGRk6gI80vM=",
   "Source": "CSIMediaTechTest",
   "BasePath": "_content/CSIMediaTechTest",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\grega\\source\\repos\\CSIMediaTechTest\\CSIMediaTechTest\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CSIMediaTechTest.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\grega\\source\\repos\\CSIMediaTechTest\\CSIMediaTechTest\\wwwroot\\css\\bootswatchTheme.css",
+      "SourceId": "CSIMediaTechTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\grega\\source\\repos\\CSIMediaTechTest\\CSIMediaTechTest\\wwwroot\\",
+      "BasePath": "_content/CSIMediaTechTest",
+      "RelativePath": "css/bootswatchTheme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootswatchTheme.css"
     },
     {
       "Identity": "C:\\Users\\grega\\source\\repos\\CSIMediaTechTest\\CSIMediaTechTest\\wwwroot\\css\\site.css",
