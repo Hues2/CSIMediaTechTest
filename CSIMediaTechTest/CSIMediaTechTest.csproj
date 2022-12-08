@@ -17,4 +17,8 @@
     <None Remove="Views\NewFolder\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Views\Create\Index.cshtml.cs" />
+  </ItemGroup>
+
 </Project>
