@@ -9,12 +9,16 @@
     <form class="form-control-lg" method="post">
         <div class="border p-3 mt-4">
             <div class="mb-4">
-                <label style="float:left">Enter Your Numbers:</label>
-                <input class="form-control" />
+                <label class="mb-2" style="float:left">Enter Your Numbers:</label>
+                <input type="number" class="form-control" />
+                
             </div>
             <div class="mb-4">
-                <label style="float:left">Sorting Preference</label>
-                <input class="form-control" />
+                <label class="mb-2" style="float:left">Sorting Preference</label>
+                <select class="form-select">
+                    <option value="Ascending">Ascending</option>
+                    <option value="Descending">Descending</option>
+                </select>
             </div>
             <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
             <a asp-controller="Home" asp-action="Index" class="btn btn-secondary" style="wift:150px">
