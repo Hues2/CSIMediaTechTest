@@ -1,30 +1,59 @@
 ﻿@{
     ViewData["Title"] = "Create Entry";
 }
+@model Entry
 
+
+@section scripts{
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#myButton").click(function() {
+                text = '<span>34</span>';
+                $("#addedNumbers").append(text);
+            })
+        })
+    </script>
+}
 
 <div class="text-center" style="padding-top:1rem">
     <h1 class="text-primary">Create New Entry</h1>
 
     <form class="form-control-lg" method="post">
-        <div class="border p-3 mt-4">
+        <div class="container border p-3 mt-4">
+
             <div class="mb-4">
+
                 <label class="mb-2" style="float:left">Enter Your Numbers:</label>
-                <input type="number" class="form-control" />
+
+                <div class="input-group">
+                    <input type="number" step="0.01" class="form-control" style="float:left" asp-for="Numbers" />
                 
+                    <button type="button" class="btn btn-primary" id="myButton" style="float:right">Add Number</button>
+                </div>
+
             </div>
+
+
+            <div class="mb-4" id="addedNumbers">
+
+            </div>
+
             <div class="mb-4">
                 <label class="mb-2" style="float:left">Sorting Preference</label>
                 <select class="form-select">
-                    <option value="Ascending">Ascending</option>
-                    <option value="Descending">Descending</option>
+                    <option value="true">Ascending</option>
+                    <option value="false">Descending</option>
                 </select>
             </div>
             <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
-            <a asp-controller="Home" asp-action="Index" class="btn btn-secondary" style="wift:150px">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-secondary" style="width:150px">
                 Back Home
             </a>
         </div>
     </form>
 
 </div>
+
+

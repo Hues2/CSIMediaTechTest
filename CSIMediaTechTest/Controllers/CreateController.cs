@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using CSIMediaTechTest.Models;
 
 namespace CSIMediaTechTest.Controllers
 {
@@ -7,6 +8,8 @@ namespace CSIMediaTechTest.Controllers
 
         private readonly ILogger<CreateController> _logger;
 
+        private Entry newEntry = new Entry();
+
         public CreateController(ILogger<CreateController> logger)
         {
             _logger = logger;
@@ -14,7 +17,7 @@ namespace CSIMediaTechTest.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(newEntry);
         }
 
      
